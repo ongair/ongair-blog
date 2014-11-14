@@ -1,4 +1,18 @@
 @charset "UTF-8";
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
 /* Bitters 0.10.0
  * http://bitters.bourbon.io
  * Copyright 2013–2014 thoughtbot, inc.
@@ -223,9 +237,43 @@ input[type="submit"] {
 
 body {
   margin: 0px; }
+  body section {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 0px; }
+    body section:after {
+      content: "";
+      display: table;
+      clear: both; }
   body header {
     width: 100%;
     background: url("/assets/images/stripe.png") top left repeat-x;
-    min-height: 10px; }
+    min-height: 10px;
+    height: 80px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    position: fixed;
+    z-index: 999999;
+    top: 0; }
+    body header .banner .brand {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      body header .banner .brand:last-child {
+        margin-right: 0; }
+      body header .banner .brand img {
+        max-height: 50px; }
+      @media screen and (max-width: 40em) {
+        body header .banner .brand {
+          padding: 0 1em;
+          float: left;
+          display: block;
+          margin-right: 7.42297%;
+          width: 46.28851%; }
+          body header .banner .brand:last-child {
+            margin-right: 0; } }
+  body .main {
+    margin-top: 80px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -20,6 +20,7 @@ This is a ghost theme for the ongair blog. It uses bourbon (Sass mixins), Bitter
 	```
 		gem install bourbon
 		gem install bitters
+		gem install neat
 		sass --watch assets/scss:assets/stylesheets/
 	```
 

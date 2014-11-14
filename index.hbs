@@ -1,1 +1,12 @@
 {{!< default}}
+
+<div role="main" class="main">
+	{{#foreach posts}}
+		{{date format='dddd DD MMM YYYY'}}
+		{{title}}
+		{{content}}
+		{{#if tags}}
+			Tags: {{tags separator=" | "}}
+		{{/if}}
+	{{/foreach}}
+</div>
