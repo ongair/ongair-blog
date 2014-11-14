@@ -1,14 +1,41 @@
 @import "bourbon/bourbon";
+@import "neat/neat";
 @import "base/base";
+
+
 
 body {
 	margin: 0px;
-	
+
+	section {
+		@include outer-container;
+		padding: 1em 0px;
+	}
+
 	header {
 		width: 100%;
 		background: url("/assets/images/stripe.png") top left repeat-x;
 		min-height: 10px;
+		height: 80px;
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+		position: fixed;
+  		z-index: 999999;
+  		top: 0;
 
+		.banner {
+			.brand {
+				@include span-columns(3);
+
+				img {
+				    max-height: 50px;
+				}
+
+				@include media($medium-screen-down) {
+			        padding: 0 1em;
+			        @include span-columns(2);
+			    }
+			}
+		}
 	}	
 }
 
