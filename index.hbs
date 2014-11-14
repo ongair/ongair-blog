@@ -2,11 +2,25 @@
 
 <div role="main" class="main">
 	{{#foreach posts}}
-		{{date format='dddd DD MMM YYYY'}}
-		{{title}}
-		{{content}}
-		{{#if tags}}
-			Tags: {{tags separator=" | "}}
-		{{/if}}
+		<article>			
+			<h1>
+				{{title}}
+			</h1>
+			
+			{{content words="100" }}
+			<a href="{{{url}}}" title="{{title}}" class="read-more">Read more</a>
+
+			<div class="byline">
+				<time class="date">
+					{{date format='dddd DD MMM YYYY'}}
+				</time>
+				{{#if tags}}
+					<div class="tags">
+						{{tags separator=" " }}
+					</div>
+				{{/if}}
+			</div>
+			
+		</article>
 	{{/foreach}}
 </div>
