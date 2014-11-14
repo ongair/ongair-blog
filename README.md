@@ -12,3 +12,13 @@ This is a ghost theme for the ongair blog. It uses bourbon (Sass mixins), Bitter
 3. Start Ghost (npm start)
 4. Log into your admin portal and select the theme
 
+
+## Development instructions
+
+1. Follow the Setup instructions
+
+	```
+		gem install bourbon
+		sass --watch assets/scss:assets/stylesheets/
+	```
+
