@@ -13,7 +13,7 @@ $(document).ready ->
 
     unless Uno.cover.isCollapsed()
       if Uno.cover.width() < 960
-        $(".panel-cover").addClass "panel-cover--collapsed"
+        $(".panel-cover").addClaass "panel-cover--collapsed"
         $(".content-wrapper").addClass "animated slideInRight"
       else
         $(".navigation--social").css "margin-left", "0px"
