@@ -6,7 +6,9 @@
       <h2 class="post-list__post-title post-title">
         <a href="{{url}}" title="link to {{{title}}}">{{{title}}}</a>
       </h2>
+      {{#if image}}
       <img class="post-list__post-image" src="{{image}}" alt="">
+      {{/if}}
       <p class="excerpt">{{excerpt}}&hellip;</p>
       <div class="post-list__meta">
         <time datetime="{{date format="DD MMM YYYY"}}" class="post-list__meta--date date">{{date format="DD MMM YYYY"}}
