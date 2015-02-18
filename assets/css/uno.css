@@ -1426,8 +1426,9 @@ hr {
 
 .btn-mobile-menu__icon,
 .btn-mobile-close__icon {
-  position: relative;
+  position: absolute;
   top: 3px;
+  right: 20px;
   font-size: 36px;
   color: #cc6eb7; }
 
