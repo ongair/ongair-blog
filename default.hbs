@@ -75,6 +75,11 @@
   {{ghost_foot}}
   {{! The main JavaScript file for Casper }}
   <script type="text/javascript" src="{{asset "js/uno.js"}}"></script>
+  <script type="text/javascript">
+    $(function() {
+      Uno.cover.collapsed();
+    });
+  </script>
   {{> google-analytics}}
 </body>
 </html>
