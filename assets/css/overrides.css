@@ -5,3 +5,5 @@
 #search-field {
   padding: 4% 5px 4% 18px;
 }
+
+article section.post a { color: rgb(204, 110, 183); }
